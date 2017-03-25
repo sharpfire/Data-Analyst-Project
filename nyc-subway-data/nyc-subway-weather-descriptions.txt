@@ -1,0 +1,111 @@
+UNIT Remote unit that collects turnstile information. Can collect from multiple banks of turnstiles.Large subway stations can have more than one unit.
+
+DATEn Date in “yyyymmdd”(20110521)format.
+
+TIMEn Time in “hh:mm:ss” (08:05:02) format.
+
+ENTRIESn Raw reading of cummulative turnstile entries from the remote unit. Occasionally resets to 0.
+
+EXITSn Raw reading of cummulative turnstile exits from the remote unit. Occasionally resets to 0.
+
+ENTRIESn_hourly Difference in ENTRIES from the previous REGULAR reading.
+
+EXITSn_hourly Difference in EXITS from the previous REGULAR reading.
+
+datetime Date and time in “yyyymmdd hh:mm:ss” format (20110501 00:00:00). Can be parsed into a Pandas datetime object without modifications.
+
+hour Hour of the timestamp from TIMEn. Truncated rather than rounded.
+
+day_week Integer (0 6Mon Sun)corresponding to the day of the week.
+
+weekday Indicator (0 or 1) if the date is a weekday (Mon Fri).
+
+station Subway station corresponding to the remote unit.
+
+latitude Latitude of the subway station corresponding to the remote unit.
+
+longitude Longitude of the subway station corresponding to the remote unit.
+
+conds Categorical variable of the weather conditions (Clear, Cloudy etc.) for the time and location.
+
+fog Indicator (0 or 1) if there was fog at the time and location.
+
+precipi Precipitation in inches at the time and location.
+
+pressurei Barometric pressure in inches Hg at the time and location.
+
+rain Indicator (0 or 1) if rain occurred within the calendar day at the location.
+
+tempi Temperature in ℉ at the time and location.
+
+wspdi Wind speed in mph at the time and location.
+
+meanprecipi Daily average of precipi for the location.
+
+meanpressurei Daily average of pressurei for the location.
+
+meantempi Daily average of tempi for the location.
+
+meanwspdi Daily average of wspdi for the location.
+
+weather_lat Latitude of the weather station the weather data is from.
+
+weather_lon Longitude of the weather station the weather data is from.
+
+
+
+UNIT收集十字转门信息的遥控单元。可以从多个十字转门收集。大型地铁站可以有多个单位。
+
+日期为“yyyymmdd”（20110521）格式。
+
+TIMEn时间为“hh：mm：ss”（08:05:02）格式。
+
+ENTRIESn来自远程单元的累积十字转门条目的原始读数。偶尔重置为0。
+
+EXITSn从遥控单元退出的累积旋转门的原始读数。偶尔重置为0。
+
+ENTRIESn_Hotly与以前的REGULAR阅读的差异。
+
+EXITSn_Hurly EXITS与以前的常规阅读差异。
+
+datetime日期和时间以“yyyymmdd hh：mm：ss”格式（20110501 00:00:00）。可以将其解析成Pandas datetime对象而无需修改。
+
+来自TIMEn的时间戳小时。截断而不是四舍五入。
+
+day_week整数（0 6Mon Sun）对应于星期几。
+
+工作日指标（0或1）如果日期是平日（周一）。
+
+站地铁站对应的远程单元。
+
+对应于远程单元的地铁站的纬度纬度。
+
+经纬度对应遥控单元的地铁站。
+
+conds天气条件的分类变量（清除，多云等）的时间和位置。
+
+雾指示器（0或1）如果在时间和位置有雾。
+
+降水在时间和位置以英寸为单位降水。
+
+压力在时间和位置的英寸Hg的大气压力。
+
+雨指示器（0或1）如果雨天在该地点的日历日内发生。
+
+tempi温度在℉的时间和位置。
+
+wspdi风速在每小时的时间和地点。
+
+meanprecipi位置的每日平均降水量。
+
+平均压力每日平均压力的位置。
+
+意思是每日平均气温的位置。
+
+meanwspdi位置的wspdi的日平均值。
+
+weather_lat气象台的纬度，天气数据来自。
+
+weather_lon天气数据来自气象站的经度。
+
+
